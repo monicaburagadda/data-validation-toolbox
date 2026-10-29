@@ -26,7 +26,7 @@ In GIS enterprise database workflows, data entry errors (such as mismatched asse
 
 
 ## 🧪 Local Testing (Without an ArcGIS License)
-To allow cross-platform validation testing by technical recruiters who may not have an active Esri ArcGIS environment setup locally, a standalone test harness is included.
+To allow cross-platform validation testing who may not have an active Esri ArcGIS environment setup locally, a standalone test harness is included.
 
 ### Execution Instructions:
 1. Ensure your local environment has `pandas` and `openpyxl` installed:
