@@ -89,11 +89,11 @@ class DataValidationCheck(object):
         report_path = os.path.join(folder, "Validation_Analysis_Report.xlsx")
         with pd.ExcelWriter(report_path) as writer:
             # Write Draft Layer datasets
-            draft_df.to_excel(writer, "Draft_All_Records", index=False)
-            draft_src.to_excel(writer, "Draft_Source_Mismatches", index=False)
-            draft_stat.to_excel(writer, "Draft_Status_Mismatches", index=False)
+            draft_df.to_excel(writer, sheet_name="Draft_All_Records", index=False)
+            draft_src.to_excel(writer, sheet_name="Draft_Source_Mismatches", index=False)
+            draft_stat.to_excel(writer, sheet_name="Draft_Status_Mismatches", index=False)
             
             # Write Finalized Features datasets
-            final_df.to_excel(writer, "Finalized_All_Records", index=False)
-            final_src.to_excel(writer, "Finalized_Source_Mismatches", index=False)
-            final_stat.to_excel(writer, "Finalized_Status_Mismatches", index=False)
+            final_df.to_excel(writer, sheet_name="Finalized_All_Records", index=False)
+            final_src.to_excel(writer, sheet_name="Finalized_Source_Mismatches", index=False)
+            final_stat.to_excel(writer, sheet_name="Finalized_Status_Mismatches", index=False)
