@@ -1,0 +1,5 @@
+Feature_ID,Boundary_Source,Process_Status,Comments
+1,Unverified,No Data,New asset flagged
+2,Unverified,In Progress,Digitizing outline
+3,System Ingestion,In Progress,ERROR: Should not be System Ingestion yet
+4,Unverified,Complete,ERROR: Draft should not be marked Complete
