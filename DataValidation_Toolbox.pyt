@@ -58,8 +58,8 @@ class DataValidationCheck(object):
         finalized_xlsx = os.path.join(folder, "Finalized_Features.xlsx")
 
         # Convert the GIS feature layers/tables directly into Excel spreadsheets
-        arcpy.conversion.TableToExcel(draft_layer, draft_xlsx, "ALIAS", "CODEPAGE")
-        arcpy.conversion.TableToExcel(finalized_layer, finalized_xlsx, "ALIAS", "CODEPAGE")
+        arcpy.conversion.TableToExcel(draft_layer, draft_xlsx, "ALIAS", "CODE")
+        arcpy.conversion.TableToExcel(finalized_layer, finalized_xlsx, "ALIAS", "CODE")
 
         def analyse(path, expected_source, expected_status):
             """
